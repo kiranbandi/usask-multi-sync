@@ -1,0 +1,21 @@
+{
+    "name": "usask-multi-sync",
+    "version": "0.0.1",
+    "description": "Socket based server to sync interactions across the web application",
+    "main": "server.js",
+    "keywords": [
+        "websocket",
+        "sync"
+    ],
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "kiranbandi",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "gt-client": "^1.1.3",
+        "lodash": "^4.17.21",
+        "socket.io": "^2.3.0"
+    }
+}
