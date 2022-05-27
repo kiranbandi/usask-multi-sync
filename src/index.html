@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GT Toolkit sample developed at UofS">
+    <meta name="author" content="kiranbandi">
+
+    <title>GT Playground</title>
+
+</head>
+
+<body class='with-top-navbar'>
+    <style>
+        #root {
+            border: 2px solid black;
+            margin: 0px auto;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #message-box {
+            border: 2px solid rgb(71, 71, 136);
+            margin: 5px auto;
+            height: 150px;
+            width: 500px;
+            position: relative;
+        }
+
+        #typer {
+            border: 1px solid rgb(71, 71, 136);
+            margin: 0px auto;
+            height: 29px;
+            position: relative;
+        }
+
+        #send-message {
+            width: 440px;
+        }
+
+        #send-button {
+            width: 50px;
+        }
+
+        #content {
+            width: 492px;
+            background: #ffe1e1;
+            height: 113px;
+            margin: 2px;
+            overflow-y: scroll;
+        }
+
+        #content>p {
+            margin: 2px 0px;
+        }
+
+        #currentID {
+            margin: 10px auto;
+            height: 20px;
+            width: 500px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #number,
+        #randomizer {
+            margin: 10px auto;
+            font-size: 20px;
+            width: 150px;
+        }
+    </style>
+    <!--container where content is to be loaded-->
+    <div id="root">
+        <canvas id="paintbox" width="495" height="495"></canvas>
+
+        <h3 id="number"> 100</h3>
+        <button id="randomizer">Randomize</button>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="gt.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
