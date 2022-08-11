@@ -64,7 +64,7 @@ async function main() {
     gt = createGt('hci-sandbox.usask.ca:3001')
     await gt.connect();
     await gt.auth(currentUserID);
-    await gt.join('synvisio', {});
+    await gt.join('synvisio-test', {});
   }
   catch (e) {
     console.error(e)
